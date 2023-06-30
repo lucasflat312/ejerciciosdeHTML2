@@ -1,0 +1,165 @@
+<html>
+
+<head>
+  <title>Formulario</title>
+</head>
+
+<style>
+		.enlace-cuadrado {
+      display: inline-block;
+      padding: 5px;
+      width: auto;
+      height: auto;
+      text-align: center;
+      border: 2px solid black;
+      background-color: white;
+      text-decoration: none;
+      color: black;
+    }
+	
+body {
+ 	background-color: #A6B675 ;
+}
+
+	.casilla-texto {
+	width: 300px;
+	height: 100px;
+	resize: vertical;
+}
+	.casilla-texto2 {
+	width: 100px;
+	height: 20px;
+	resize: vertical;
+}
+	.casilla-texto3 {
+	width: 285px;
+	height: 20px;
+	resize: vertical;
+}
+	.casilla-numero {
+	width: 50px;
+
+}
+	.contenedor-cuadrado {
+  	width: 450px;
+  	height: 260px;
+  	background-color: #A6B675 ;
+ 	 border: 2px solid black;
+  	border-radius: 1px;
+  	padding: 20px;
+  	margin: 0 ;
+  	text-align: left;
+}
+
+
+	.contenedor-cuadrado form {
+ 	 margin-top: 5px;
+}
+
+	.texto-borde {
+ 	 position: absolute;
+ 	 top: 47px;
+  	 left: 60;
+  	transform: translateX(-40%);
+  	background-color: #A6B675 ;
+	border: 0px solid black;
+
+}
+
+	.contenedor-cuadrado2 {
+  	width: 450px;
+  	height: 100px;
+  	background-color: #A6B675 ;
+ 	 border: 2px solid black;
+  	border-radius: 1px;
+  	padding: 20px;
+  	margin: 0 ;
+  	text-align: left;
+        position: absolute;
+        top: 380;
+        left: 8;
+}
+
+
+	.contenedor-cuadrado2 form {
+ 	 margin-top: -5px;
+}
+
+	.texto-borde2 {
+ 	 position: absolute;
+ 	 top: -10;
+  	 left: 60;
+  	 transform: translateX(-40%);
+  	 background-color: #A6B675 ;
+	 border: 0px solid black;
+
+</style>
+
+<body>
+  	<h2>Informacion Sobre el producto</h2>
+  
+
+<div class="contenedor-cuadrado">
+ <span class="texto-borde">Datos basicos</span>
+	<form method="POST" action="procesar.php">
+<form>
+   
+    <label for="nombre">Nombre</label>
+<br>
+    <input type="text" id="nombre" name="nombre" class="casilla-texto3" required>
+<br></br>
+
+
+    <label for="Descripcion">Descripcion</label>
+<br>
+    <input type="text" id="Descripcion" name="Descripcion" class="casilla-texto" required>
+<br></br>
+
+  <label for="Foto">Foto</label>
+<input type="text" id="nada" name="nada" class="casilla-texto2">  <input type="file" value="foto"> 
+
+<br></br>   
+    <input type="checkbox"  name="Visitas" checked>
+    <label for="Visitas">Añadir contador de visitas</label>
+</form>
+</div>
+
+
+
+
+<div class="contenedor-cuadrado2">
+ <span class="texto-borde2">Datos economicos</span>
+<form>
+
+    <label for="Precio">Precio</label>
+
+    <input type="number"  name="Precio" id="Precio"  class="casilla-numero" required> €   
+
+  <label for="Impuestos">Impuestos</label>
+  <select id="Impuestos">
+    <option value="opcion1">4%</option>
+    <option value="opcion2">7%</option>
+    <option value="opcion3">16%</option>
+    <option value="opcion4">25%</option>
+  </select>
+<br></br>
+  <label for="Promocion">Promocion</label>
+<br>  
+<input type="radio" name="Promocion" >Ninguno<br>
+<input type="radio" name="Promocion" >Transporte gratuito<br>
+<input type="radio" name="Promocion" >Descuento 5%<br>
+
+  </form>
+
+
+	 </br></br>
+        </br></br>
+        <a href="https://lucasflat312.github.io/ejerciciosdehtml2/index.html" class="enlace-cuadrado" >volver</a>
+        </br></br>
+	
+</body>
+</html>
+
+
+
+
